@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaFx.fxml.costsListControl">
+   <children>
+      <Label layoutX="358.0" layoutY="14.0" text="لطفا اطلاعات مورد نظر را وارد نمایید :" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="costAddNameTField" alignment="CENTER_RIGHT" layoutX="157.0" layoutY="60.0" promptText="نام" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="60.0" />
+      <TextField layoutX="241.0" layoutY="68.0" nodeOrientation="RIGHT_TO_LEFT" promptText="تعداد / مقدار" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="100.0" />
+      <ChoiceBox fx:id="costAddChoiceBox" layoutX="29.0" layoutY="100.0" prefHeight="25.0" prefWidth="80.0" AnchorPane.rightAnchor="290.0" AnchorPane.topAnchor="100.0" />
+      <TextField layoutX="251.0" layoutY="78.0" nodeOrientation="RIGHT_TO_LEFT" promptText="قیمت" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="140.0" />
+      <Button fx:id="costAddSubmitBtn" layoutX="174.0" layoutY="216.0" mnemonicParsing="false" text="ثبت" AnchorPane.bottomAnchor="45.0" AnchorPane.rightAnchor="173.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="352.0" layoutY="181.0" text="لطفا اطلاعات را تکمیل نمایید!" textFill="#cf4c4c" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="180.0" />
+      <Label layoutX="352.0" layoutY="104.0" text="تعداد / مقدار :" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="104.0" />
+      <Label layoutX="352.0" layoutY="64.0" text="نام :" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="64.0" />
+      <Label layoutX="352.0" layoutY="144.0" text="قیمت :" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="144.0" />
+   </children>
+</AnchorPane>

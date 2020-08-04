@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="450.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaFx.controllers.registerControl">
+   <top>
+      <Label text="ثبت نام" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </top>
+   <bottom>
+      <Button fx:id="submit" mnemonicParsing="false" onAction="#regSubmitBtn" prefHeight="40.0" prefWidth="80.0" text="انجام" textAlignment="CENTER" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets bottom="10.0" />
+         </BorderPane.margin>
+      </Button>
+   </bottom>
+   <padding>
+      <Insets left="5.0" right="5.0" />
+   </padding>
+   <center>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="185.0" prefWidth="539.0">
+               <children>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fx:id="regImage" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets left="5.0" top="5.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Button fx:id="regPhotoSubmit" mnemonicParsing="false" onAction="#regPhotoSubmitCode" text="ثبت" textAlignment="CENTER">
+                           <VBox.margin>
+                              <Insets left="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                     <opaqueInsets>
+                        <Insets bottom="5.0" top="5.0" />
+                     </opaqueInsets>
+                  </VBox>
+                  <Pane prefHeight="166.0" prefWidth="175.0" />
+                  <VBox alignment="CENTER_RIGHT" prefHeight="185.0" prefWidth="175.0">
+                     <children>
+                        <TextField fx:id="regNameTField" nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" prefWidth="0.0" promptText="نام *">
+                           <VBox.margin>
+                              <Insets right="5.0" top="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="regFNameTField" nodeOrientation="RIGHT_TO_LEFT" prefWidth="0.0" promptText="نام خانوادگی *">
+                           <VBox.margin>
+                              <Insets right="5.0" top="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="regReferenceTField" nodeOrientation="RIGHT_TO_LEFT" prefWidth="0.0" promptText="معرف">
+                           <VBox.margin>
+                              <Insets right="5.0" top="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <VBox alignment="TOP_RIGHT" prefHeight="151.0" prefWidth="504.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="529.0">
+                     <children>
+                        <Label contentDisplay="RIGHT" text="تاریخ تولد *" textAlignment="RIGHT">
+                           <HBox.margin>
+                              <Insets left="5.0" right="5.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="regBDay" prefWidth="30.0">
+                           <HBox.margin>
+                              <Insets right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Label text="/">
+                           <HBox.margin>
+                              <Insets top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="regBMonth" prefWidth="30.0">
+                           <HBox.margin>
+                              <Insets left="5.0" top="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Label text="/">
+                           <HBox.margin>
+                              <Insets left="5.0" top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="regBYear" prefWidth="50.0">
+                           <HBox.margin>
+                              <Insets left="5.0" top="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" nodeOrientation="RIGHT_TO_LEFT" prefHeight="81.0" prefWidth="542.0">
+                     <children>
+                        <TextField fx:id="regPhoneTField" nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" prefWidth="200.0" promptText="شماره تماس *">
+                           <HBox.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Separator prefWidth="200.0">
+                           <HBox.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </HBox.margin>
+                        </Separator>
+                        <TextField fx:id="regCodeTField" promptText="کد *">
+                           <HBox.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <Button contentDisplay="RIGHT" mnemonicParsing="false" text="ثبت شماره" textAlignment="RIGHT">
+                     <VBox.margin>
+                        <Insets right="5.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Label fx:id="regWarning" text="لطفا اطلاعات مورد نیاز را کامل نمایید." textFill="#cf4c4c" visible="false">
+                     <VBox.margin>
+                        <Insets bottom="-3.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
